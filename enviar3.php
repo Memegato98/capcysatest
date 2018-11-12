@@ -42,6 +42,7 @@ $mail->addAddress('pul98alvarenga@gmail.com');
 $mail->Subject = 'PHPMailer GMail SMTP test';
 //Replace the plain text body with one created manually
 $mail->AltBody = $carta;
+$mail->Body = $carta;
 //send the message, check for errors
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
