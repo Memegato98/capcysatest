@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
 //Create a new PHPMailer instance
-$nombre + $_POST['name'];
-$correo + $_POST['email'];
-$mensaje + $_POST['message'];
+$nombre = $_POST['name'];
+$correo = $_POST['email'];
+$mensaje = $_POST['message']; 
 $carta = "Servicio de Consultas de CAPCYSA \n";
 $carta .= "De: $nombre \n";
 $carta .= "Correo: $correo \n";
