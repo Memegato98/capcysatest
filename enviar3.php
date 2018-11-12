@@ -26,7 +26,12 @@ $mail->Body = 'Este es el cuerpo del correo';
 /**===================================*/
 /** Envio del email */
 
-$mail->send();
+if($mail->send() == false){
+    echo "No se pudo enviar";
+    echo "Error de envio PHPMailer " . $mail->ErrorInfo;
+}else{
+    echo "El correo se envio";
+}
 
 
 
